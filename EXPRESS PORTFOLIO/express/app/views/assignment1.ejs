@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!---Tittle name-->
+    <title>Multiplication Table</title>
+<!---link to my css-->
+<link rel="stylesheet" href="/Stylesheets/contact.css" type="text/css">
+    <!---Navigation buttons-->
+  <div class="container">
+    <a class="circle" href="index.html">HOME</a>
+    <a class="circle" href="about.html">ABOUT</a>
+    <a class="circle" href="contact.html">CONTACT</a>
+  </div>
+</head>
+
+<!---Body-->
+<body id="body">
+ <header>
+ <h1 id="different">Welcome to the Timetable Generator!</h1>
+<ul class="test">
+  <li>Let's get started and create your personalized timetable!</li>
+  <li>With just a few clicks, you can have your perfect schedule at your fingertips.</li>
+  <li>Effortlessly organize your time and boost your productivity with our intuitive generator.</li>
+  <li>Experience the convenience of a tailored timetable that fits your needs.</li>
+  <li>Get ready to optimize your daily routine and make the most out of every moment!</li>
+</ul>
+<br>
+<br>
+<P class="test"><b><i>Choose the number of ros and columns you want..</i></b></P>
+
+<!---THE MULTIPLICATION SET-->
+<fieldset style="width: 30%;">
+<legend class="redtest"><b>START HERE!!</b></legend>
+<div id="table-container"></div>
+<div>
+    <hr style="border-style: solid; border-color:rgb(213, 31, 7); border-width: 3px;">
+    <!---Paragraph for ROWS-->
+    <P>
+    <label for="rows">Rows Number:</label>
+    <input type="number" id="rows" min="1" max="100">
+</P>
+
+<!---Paragraph for COLUMNS-->
+<p>
+    <label for="columns">Column Number:</label>
+    <input type="number" id="columns" min="1" max="100">
+</p>
+
+<!---SUBMIT BUTTON-->
+<button onclick="makeTable()" id="custom-button-green">Create Table</button>
+
+<!---RESET BUTTON-->
+<button onclick="resetTable()" id="custom-button-red">Reset</button>
+</div>
+</fieldset>
+
+<br>
+<br>
+<br>
+
+<!---Youtube video reference-->
+<H4>This video features the descriptive measures of the multiplication table <a href="https://www.youtube.com/embed/uup7IC7c1V8" target="_blank">(@ Virtual Elementary Schools) :</a></H4>
+
+<!---Youtube video link-->
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uup7IC7c1V8" frameborder="0" allowfullscreen></iframe>
+            <h4>Courtesy of: Virtual Elementary School</h4>
+            <P><a href="https://youtu.be/uup7IC7c1V8">Click here to watch the video</a></P>
+        </div>
+    </header>
+    
+    <br>
+
+    <!---Sharing of my website link-->
+    <div>
+      <h3 class="redtest"><i><b>Share the love! If you find our website helpful, please share it with others who might benefit from it :</b></i></h3>
+      <ul class="social-media-buttons">
+
+        <!---For facebook-->
+        <li><a href="https://www.facebook.com/sharer/sharer.php?u=researchgrips.com" target="_blank">
+          <img class="hover" src="/images/facebook-removebg-preview.png" alt="Facebook" height="30" width="30"></a></li>
+          <br><br>
+
+          <!---For twitter-->
+        <li><a href="https://twitter.com/intent/tweet?url=researchgrips.com" target="_blank">
+          <img class="hover" src="/images/twitter.jpg" alt="Twitter" height="30" width="30"></a></li>
+          <br><br>
+
+          <!---For linkedlin-->
+        <li><a href="https://www.linkedin.com/shareArticle?url=researchgrips.com" target="_blank">
+          <img class="hover" src="/images/in-removebg-preview.png" alt="LinkedIn" height="30" width="30"></a></li>
+          <br><br>
+
+          <!---For Whatsapp-->
+          <li><a href="whatsapp://send?text=researchgrips.com" target="_blank"><img class="hover" src="/images/appp-removebg-preview.png" alt="WhatsApp" height="30" width="30"></a></li>
+      </ul>
+    </div>
+            
+
+           <!-- Footer -->   
+     <!-- Include the footer partial -->
+<%- include('./Partials/footer') %>
+
+       <!---Javascript link-->
+    <script src="/Javascripts/assignment1.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+/* File: assignemnt1.css
+// Student’s Name: ANIEBONAM VIVIAN OLUOMACHUKWU
+// StudentID: 301308143
+// Date: 01-10-2023*/
+
+/* CSS for the body element */
+body {
+    font-family: Arial, sans-serif; /* Set the font for the entire page */
+    background-color: #f2f2f2; /* Background color */
+    text-align: center; /* Center-align text */
+    margin-top: 50px; /* Add space at the top */
+}
+
+/* CSS for h1 (heading) elements */
+h1 {
+    color: #333333; /* Text color for headings */
+}
+
+/* CSS for the table container */
+#table-container {
+    margin-top: 30px; /* Add space at the top of the table container */
+}
+
+/* CSS for tables */
+table {
+    border-collapse: collapse; /* Collapse table borders */
+    margin: 0 auto; /* Center-align the table horizontally */
+}
+
+/* CSS for table cells */
+td {
+    width: 30px; /* Set width of table cells */
+    height: 30px; /* Set height of table cells */
+    border: 1px solid #cccccc; /* Add a border around cells */
+    text-align: center; /* Center-align cell content */
+}
+
+/* CSS for input elements */
+input {
+    margin-top: 20px; /* Add space at the top of input elements */
+    font-size: 16px; /* Set font size for input elements */
+}
+
+/* CSS for the footer element */
+footer {
+    margin-top: 50px; /* Add space at the top of the footer */
+    color: #999999; /* Text color for the footer */
+    font-size: 12px; /* Set font size for the footer */
+}

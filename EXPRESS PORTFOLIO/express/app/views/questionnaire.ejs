@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!--File: QUESTIONNAIRE.ejs
+// Student’s Name: ANIEBONAM VIVIAN OLUOMACHUKWU
+// StudentID: 301308143
+// Date: 01-10-2023-->
+<head>
+	<meta charset="UTF-8">
+	<title>Questionnaire: Healthcare Staffing Crisis in Ontario</title>
+  <link rel="stylesheet" href="/Stylesheets/questionnairestyles.css" type="text/css">
+ 
+  <!--ANIEBONAM VIVIAN, STUDENT NUMBER 301308143-->
+</head>
+<body id="allpages">
+	<h3><i>Questionnaire:</i></h3>
+     <h1>Factors Contributing to the Healthcare Staffing Crisis in Ontario and Workable Solutions</h1>
+	<h2>Section A: Demographics</h2>
+
+	<form action="questionnaire.php" method="post">
+    <p>
+      <!--FOR AGE-->
+      <label for="Age">1. What is your age?</label><br>
+      <input type="number" name="Age" id="Age" required>
+  </p>
+
+		<p>
+      <!--FOR GENDER-->
+			<label for="Gender">2. What is your gender?</label><br>
+			<input type="radio" name="Gender" value="male" id="male"><label for="male">Male</label><br>
+			<input type="radio" name="Gender" value="female" id="female"><label for="female">Female</label><br>
+			<input type="radio" name="Gender" value="non-binary" id="non-binary"><label for="non-binary">Non-binary</label>
+		</p>
+
+    <p>
+      <!--TARGETED AUDIENCE-->
+      <label for="Statuss">3. What best describes you?</label><br>
+      <input type="radio" name="Statuss" value="Provider" id="Provider">
+      <label for="Provider">Healthcare Provider</label><br>
+      <input type="radio" name="Statuss" value="Law maker" id="Law-maker">
+      <label for="Law-maker">Policy maker</label><br>
+      <input type="radio" name="Statuss" value="Patient" id="Patient">
+      <label for="Patient">Patient</label>
+    </p>
+
+   <p>
+    <!--EDUCATIONAL STATUS-->
+    <label for="Education">4. What is your educational background?</label><br>
+    <input type="radio" name="Eucation" value="high-school" id="high-school">
+    <label for="high-school">High school diploma</label><br>
+    <input type="radio" name="Education" value="college" id="college">
+    <label for="college">College diploma</label><br>
+    <input type="radio" name="Education" value="bachelor" id="bachelor">
+    <label for="bachelor">Bachelor's degree</label><br>
+    <input type="radio" name="Education" value="master" id="master">
+    <label for="master">Master's degree</label><br>
+    <input type="radio" name="Education" value="doctoral" id="doctoral">
+    <label for="doctoral">Doctoral degree</label>
+  </p>
+
+		<!--SECTION 1-->
+		<h2>Section B: Factors Contributing to the Healthcare Staffing Crisis</h2>
+
+    <p><b><i>In this section, we will share various factors contributing to healthcare staffing crisis in Ontario and let us know your points of view by checking the box ☑.</i></b></p>
+		<p><b>5. Choose the factors you think that is/are contributing to the healthcare staffing crisis in Ontario.</b></p>
+
+		<input type="checkbox" name="factors[]" value="Aging population">Aging population<br>
+
+		<input type="checkbox" name="factors[]" value="Policy readjustment">Government policies that hinders opportunities for international professionals.<br>
+
+		<input type="checkbox" name="factors[]" value="Lack of government funding in education">Lack of government funding in educational system<br>
+
+		<input type="checkbox" name="factors[]" value="Lack of government funding and support to the international trained healthcare providers">Lack of government funding and support to the international trained healthcare providers<br>
+
+		<input type="checkbox" name="factors[]" value="High workload and burnout">High workload and burnout<br>
+
+		<input type="checkbox" name="factors[]" value="Insufficient training and education opportunities">Insufficient training and educational opportunities<br>
+
+		<input type="checkbox" name="factors[]" value="Low wages and benefits">Low wages and benefits to the healthcare providers<br>
+
+		<input type="checkbox" name="Factors_other" value="Other">Other (please specify):<input type="text" size="50" name="factors_other"><br>
+
+  
+    <p>
+      <!--SECTION2-->
+      <label for="factors"><strong>6. Which of these factors do you believe is the highest priority for making progress in the next 5 years?</strong></label><br>
+      <input type="radio" name="PriorityFactors" value="Aging population" id="Aging-population">
+      <label for="Aging-population">Aging population</label><br>
+      <input type="radio" name="PriorityFactors" value="Policy readjustment" id="Policy-readjustment">
+      <label for="Policy-readjustment">Government policies that hinders opportunities for international professionals.</label><br>
+      <input type="radio" name="PriorityFactors"  value="Lack of government funding in education" id="Lack-of-government-funding-in-education">
+      <label for="Lack-of-government-funding-in-education">Lack of government funding in educational system</label><br>
+      <input type="radio" name="PriorityFactors"  value="Lack of government funding and support to the international trained healthcare providers" id="Lack-of-government-funding-and-support-to-the-international-trained-healthcare-providers">
+      <label for="Lack-of-government-funding-and-support-to-the-international-trained-healthcare-providers">Lack of government funding and support to the international trained healthcare providers</label><br>
+      <input type="radio" name="PriorityFactors" value="High workload and burnout" id="High-workload-and-burnout">
+      <label for="High-workload-and-burnout">High workload and burnout</label><br>
+      <input type="radio" name="PriorityFactors"  value="Insufficient training and education opportunities" id="Insufficient-training-and-education-opportunities">
+      <label for="Insufficient-training-and-education-opportunities">Insufficient training and educational opportunities</label><br>
+      <input type="radio" name="PriorityFactors"  value="Low wages and benefits to the healthcare providers" id="Low-wages-and-benefits-to-the-healthcare-providers">
+      <label for="Low-wages-and-benefits-to-the-healthcare-providers">Low wages and benefits to the healthcare providers</label><br>
+      <input type="radio" name="PriorityFactors"  value="Other" id="Other">
+      <label for="Other">Other (please specify):</label>
+      <input type="text" size="50" name="PriorityFactors_other"><br>
+    </p>
+ <!--SECTION 3-->
+		<p><b>7. How do you think each of these factors above, contributes to the staffing crisis? (Check all that apply.☑)</b></p>
+    <input type="checkbox" name="StaffingCrisisBunch[]" value="Makes it difficult to attract qualified professionals">Makes it difficult to attract qualified professionals<br>
+		<input type="checkbox" name="StaffingCrisisBunch[]" value="Makes it difficult to retain qualified professionals">Makes it difficult to retain qualified professionals<br>
+		<input type="checkbox" name="StaffingCrisisBunch[]" value="Causes an increase in workload and burnout">It causes an increase in workload and burnout<br>
+		<input type="checkbox" name="StaffingCrisisBunch[]"   value="Causes a decrease in the quality of care provided">It causes a decrease in the quality of care provided<br>
+        <label>
+            <input type="checkbox" name="solutions" value="Other">
+            Other (please specify):
+            <input type="text" size="50" name="StaffingCrisisBunch_other">
+          </label>
+
+<!--SECTION 4-->
+        <h2>Section C: Workable Solutions</h2>
+
+  <p><b>8. In your opinion, what are some workable solutions to the healthcare staffing crisis in Ontario? (Check all that apply.☑)</b></p>
+
+  <p>
+    <label><input type="checkbox" name="WorkableSolution[]" value="Increase government funding for healthcare"> Increase government funding for healthcare</label><br>
+    <label><input type="checkbox" name="WorkableSolution[]" value="Provide better wages and benefits to healthcare workers"> Provide better wages and benefits to healthcare workers</label><br>
+    <label><input type="checkbox" name="WorkableSolution[]"value="Increase the number of training and education opportunities for healthcare workers"> Increase the number of training and education opportunities for healthcare workers</label><br>
+    <label><input type="checkbox" name="WorkableSolution[]" value="Implement policies to lossen up the restrictions for international healthcare providers"> Implement policies to loosen up the restrictions for international healthcare providers</label><br>
+    <label><input type="checkbox" name="WorkableSolution[]"value="Implement policies to reduce workload and prevent burnout"> Implement policies to reduce workload and prevent burnout such as mandatory annual leave etc.</label><br>
+    <label><input type="checkbox" name="WorkableSolution[]" value="Other"> Other (please specify): <input type="text" name="solutions_other"></label>
+  </p>
+<!--SECTION 5-->
+  <p><b>9. What barriers do you think exist to implementing these solutions? (Check all that apply.☑)</b></p>
+<label>
+  <input type="checkbox" name="Barriers[]" value="Lack of government funding">
+  Lack of government funding
+</label>
+<br>
+<label>
+  <input type="checkbox" name="Barriers[]" value="Insufficient political will">
+  Financial gain from the government
+</label>
+<br>
+<label>
+  <input type="checkbox" name="Barriers[]" value="Resistance from healthcare workers or employers">
+  Resistance from healthcare workers or employers
+</label>
+<br>
+<label>
+  <input type="checkbox" name="Barriers[]" value="Difficulty in coordinating efforts among different stakeholders">
+  Difficulty in coordinating efforts among different stakeholders
+</label>
+<br>
+<label>
+  <input type="checkbox" name="Barriers[]" value="Insufficient political will">
+  Insufficient political will
+</label>
+<br>
+<label>
+  <input type="checkbox" name="Barriers[]"value="Other">
+  Other (please specify):
+  <input type="text" name="barriers_other">
+</label>
+
+<p><b>10. How confident are you that these solutions would be effective in addressing the healthcare staffing crisis in Ontario?</b></p>
+
+<label for="Confidents">
+  <input type="radio" name="Confidents" value="1">
+  Very confident
+</label>
+<br>
+<label>
+  <input type="radio" name="Confidents" value="2">
+  Somewhat confident
+</label>
+<br>
+<label>
+  <input type="radio" name="Confidents" value="3">
+  Not very confident
+</label>
+<br>
+  </label>
+  </li>
+  </ul>
+  
+<p>
+  <!--SECTION 6-->
+  <label for="Suggestions">SUGGESTIONS:<br><br>Are there any other solutions you would recommend 
+    for addressing the healthcare staffing crisis in Ontario?</label>
+  <br>
+  <textarea id="txtsuggestions" name="Suggestions" cols="100" rows="20" placeholder="---Please share with us your
+   suggestions on how we can effectively address and resolve these crises. ---" tabindex="6"></textarea>
+</p>
+
+
+       <div id="thank-you-message">
+         <p>Thank you! We will consider your feedback!</p>
+         </div>
+         <p>
+          <input type="submit" name="formSubmit" value="Submit" tabindex="80">
+          <input type="reset" name="formreset" value ="Reset" tabindex="40">
+      </p>
+      <h4 class="redtest"><i>For further enquiries/Suggestions to the author:</i><a href="mailto:aniebonamvivian1@gmail.com"> Email: aniebonamvivian1@gmail.com</a></h4>
+        
+       <h3 id="index"><a href="index"><strong>BACK TO HOME PAGE</strong> </a></h3>
+    </body>
+    </html> 
+
+         

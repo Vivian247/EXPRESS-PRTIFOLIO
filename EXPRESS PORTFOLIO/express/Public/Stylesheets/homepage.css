@@ -1,0 +1,75 @@
+/* File: homepage.css
+// Student’s Name: ANIEBONAM VIVIAN OLUOMACHUKWU
+// StudentID: 301308143
+// Date: 01-10-2023*/
+
+
+/* Home Page Styles */
+
+/* Styles for the main container */
+.container {
+  position: relative; /* Position relative for child elements */
+}
+
+/* Styles for the text container within the main container */
+.text-container {
+  position: absolute; /* Position absolute to place it at the top left corner of the parent */
+  top: 0; /* Position at the top of the parent container */
+  left: 0; /* Position at the left of the parent container */
+}
+
+/* Styles for the logo element */
+.logo {
+  position: absolute; /* Position absolute for custom positioning */
+  top: 30px; /* Position 30px from the top of the parent container */
+  left: 500px; /* Position 500px from the left of the parent container */
+  z-index: 1; /* Set z-index for stacking order */
+  height: 30%; /* Set height as a percentage of the parent container */
+  width: 20%; /* Set width as a percentage of the parent container */
+}
+
+/* Styles for the header image with a background blur effect */
+.header-img::before {
+  background-image: url('bg.jpg'); /* Set the background image */
+  background-size: cover; /* Cover the entire container with the background image */
+  filter: blur(2px); /* Apply a blur effect */
+  z-index: -1; /* Set z-index to position it behind other elements */
+}
+
+/* Styles for the body (background image) */
+body {
+  background-image: url('bg.jpg'); /* Set the background image */
+  background-size: cover; /* Cover the entire viewport with the background image */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  background-position: center center; /* Center the background image */
+}
+
+/* Styles for the 'vee' element */
+.vee {
+  position: absolute; /* Position absolute for custom positioning */
+  top: 50%; /* Position at the vertical center of the parent container */
+  left: 50%; /* Position at the horizontal center of the parent container */
+  transform: translate(-50%, -50%); /* Center the element using translation */
+  z-index: 1; /* Set z-index for stacking order */
+  width: 200px; /* Set width as desired */
+  height: 200px; /* Set height as desired */
+  background-image: url('846ea99e-87c6-4d51-9a13-32afb47087a5-removebg-preview.png'); /* Set background image */
+  background-size: contain; /* Contain the background image within the element */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  background-position: center center; /* Center the background image */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

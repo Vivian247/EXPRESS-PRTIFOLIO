@@ -1,0 +1,1201 @@
+
+/* File: contact.css
+// Student’s Name: ANIEBONAM VIVIAN OLUOMACHUKWU
+// StudentID: 301308143
+// Date: 01-10-2023*/
+
+/* Styles for the body element */
+body {
+  background-color: ghostwhite; /* Background color */
+  font-family: Arial, Helvetica, sans-serif; /* Font family */
+  padding: 10px; /* Padding */
+}
+
+/* Styles for elements with class .hover on hover */
+.hover:hover {
+  background-color: goldenrod; /* Background color on hover */
+}
+
+/* Styles for elements with class .test */
+.test {
+  font-family: monospace "Consolas", "Courier New", Courier, monospace; /* Font family */
+  /*font-weight: bolder;*/ /* Font weight (currently commented out) */
+  text-shadow: black; /* Text shadow */
+  text-decoration: solid; /* Text decoration */
+  line-height: 2.5; /* Line height (add line spacing) */
+  font-size: larger; /* Font size */
+  margin: auto; /* Center align horizontally */
+  padding-left: 2%; /* Left padding */
+}
+
+/* Styles for elements with class .left */
+.left {
+  float: right; /* Float element to the right */
+  padding-right: 20%; /* Right padding */
+  padding-top: 0%; /* Top padding */
+}
+
+/* Styles for elements with class .right */
+.right {
+  padding-left: 10%; /* Left padding */
+  padding-top: 1%; /* Top padding */
+}
+
+/* Styles for h3 elements within .left */
+.left h3 {
+  color: rgb(11, 10, 10); /* Text color */
+}
+
+/* Styles for links within h3 elements in .left */
+.left h3 a {
+  text-decoration: none; /* Remove underline from links */
+  color: rgb(11, 10, 10); /* Link text color */
+}
+
+/* Styles for links within h3 elements in .left on hover */
+.left h3 a:hover {
+  color: goldenrod; /* Text color on hover */
+}
+
+/* Styles for input elements with type "submit" */
+input[type="submit"] {
+  background-color: #4CAF50; /* Background color */
+  color: white; /* Text color */
+  padding: 12px 20px; /* Padding */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Border radius */
+  cursor: pointer; /* Cursor style */
+  margin-top: 20px; /* Top margin */
+}
+
+/* Styles for input elements with type "submit" on hover */
+input[type="submit"]:hover {
+  background-color: goldenrod; /* Background color on hover */
+}
+
+/* Styles for input elements with type "reset" */
+input[type="reset"] {
+  background-color: #e110f4; /* Background color */
+  color: white; /* Text color */
+  padding: 12px 20px; /* Padding */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Border radius */
+  cursor: pointer; /* Cursor style */
+  margin-top: 20px; /* Top margin */
+}
+
+/* Styles for input elements with type "reset" on hover */
+input[type="reset"]:hover {
+  background-color: goldenrod; /* Background color on hover */
+}
+/* Styles for label elements */
+label {
+  display: block; /* Display labels as block elements */
+  margin-bottom: 10px; /* Add margin at the bottom of labels */
+  font-weight: bold; /* Apply bold font weight to labels */
+}
+
+/* Styles for input elements with type "text" */
+input[type="text"] {
+  border: 2px solid #ccc; /* Border style for text input */
+  border-radius: 5px; /* Border radius for text input */
+  padding: 5px; /* Padding for text input */
+  font-size: 16px; /* Font size for text input */
+}
+
+/* Styles for input elements with type "text" when focused */
+input[type="text"]:focus {
+  outline: none; /* Remove outline on focus */
+  border-color: #090660; /* Border color on focus */
+  box-shadow: 0 0 5px #090660; /* Apply box shadow on focus */
+}
+
+/* Styles for elements with ID "padding" */
+#padding {
+  display: block; /* Display elements with ID "padding" as block elements */
+  margin-bottom: 10px; /* Add margin at the bottom of these elements */
+  font-weight: bold; /* Apply bold font weight to these elements */
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  .left {
+      float: none; /* Remove float for .left elements */
+      padding-right: 0%; /* Remove right padding for .left elements */
+      text-align: center; /* Center-align text for .left elements */
+  }
+
+  .right {
+      padding-left: 0%; /* Remove left padding for .right elements */
+      padding-top: 5%; /* Add top padding for .right elements */
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+      margin-top: 10px; /* Add top margin for submit and reset buttons */
+  }
+
+  #padding {
+      margin-top: 20px; /* Add top margin for elements with ID "padding" */
+  }
+}
+
+/* Styles for textarea elements */
+textarea {
+  border: 2px solid #ccc; /* Border style for textarea */
+  border-radius: 5px; /* Border radius for textarea */
+  padding: 5px; /* Padding for textarea */
+  font-size: 16px; /* Font size for textarea */
+}
+
+/* Styles for textarea elements when focused */
+textarea:focus {
+  outline: none; /* Remove outline on focus for textarea */
+  border-color: #090660; /* Border color on focus for textarea */
+  box-shadow: 0 0 5px #090660; /* Apply box shadow on focus for textarea */
+}
+
+/* Styles for paragraphs within fieldset elements */
+fieldset p {
+  display: flex; /* Display paragraphs within fieldset as flex containers */
+  align-items: center; /* Align items within flex containers */
+}
+
+/* Styles for labels within paragraphs of fieldset elements */
+fieldset p label {
+  width: 150px; /* Set a fixed width for labels within fieldset paragraphs */
+}
+
+/* Styles for textarea elements within paragraphs of fieldset elements */
+fieldset p textarea {
+  margin-left: 20px; /* Set the margin between labels and textareas */
+}
+
+
+/* Styles for screens larger than 768px */
+@media (min-width: 768px) {
+  /* Adjust styles for .left and .right elements */
+  .left {
+      float: right; /* Float .left elements to the right */
+      padding-right: 20%; /* Add right padding to .left elements */
+  }
+  
+  .right {
+      padding-left: 10%; /* Add left padding to .right elements */
+      padding-top: 1%; /* Add top padding to .right elements */
+  }
+  
+  /* Adjust font size and line height for .test elements */
+  .test {
+      font-size: larger; /* Increase font size for .test elements */
+      line-height: 2.5; /* Increase line height for .test elements */
+  }
+  
+  /* Adjust font size for label elements */
+  label {
+      font-size: inherit; /* Inherit font size for label elements */
+  }
+  
+  /* Adjust padding for submit and reset buttons */
+  input[type="submit"],
+  input[type="reset"] {
+      padding: 12px 20px; /* Adjust padding for submit and reset buttons */
+  }
+  
+  /* Adjust width for labels within fieldset paragraphs */
+  fieldset p label {
+      width: 150px; /* Set a fixed width for labels within fieldset paragraphs */
+  }
+  
+  /* Adjust margin between labels and textareas within fieldset paragraphs */
+  fieldset p textarea {
+      margin-left: 20px; /* Set the margin between labels and textareas */
+  }
+}
+
+/* Styles for elements with ID "allpages" */
+#allpages {
+  text-align: center; /* Center-align text within elements with ID "allpages" */
+}
+
+/* Styles for elements with ID "cname" */
+#cname {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Set font family for elements with ID "cname" */
+  font-style: unset; /* Reset font style for elements with ID "cname" */
+  font-weight: bolder; /* Apply bold font weight to elements with ID "cname" */
+  text-shadow: black; /* Apply text shadow to elements with ID "cname" */
+  text-decoration: solid; /* Apply text decoration to elements with ID "cname" */
+}
+
+/* Styles for elements with class "pname" */
+.pname {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Set font family for elements with class "pname" */
+  font-style: unset; /* Reset font style for elements with class "pname" */
+  font-weight: bolder; /* Apply bold font weight to elements with class "pname" */
+  text-shadow: black; /* Apply text shadow to elements with class "pname" */
+  text-decoration: solid; /* Apply text decoration to elements with class "pname" */
+}
+
+/* Styles for elements with ID "mission" */
+#mission {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Set font family for elements with ID "mission" */
+  font-style: unset; /* Reset font style for elements with ID "mission" */
+  font-weight: bolder; /* Apply bold font weight to elements with ID "mission" */
+  text-shadow: black; /* Apply text shadow to elements with ID "mission" */
+  text-decoration: solid; /* Apply text decoration to elements with ID "mission" */
+}
+
+/* Styles for elements with ID "awards" */
+#awards {
+  margin-bottom: 15px; /* Add bottom margin to elements with ID "awards" */
+  border-radius: 10px; /* Apply border radius to elements with ID "awards" */
+  box-shadow: 5px 5px 5px #540909; /* Apply box shadow to elements with ID "awards" */
+  padding: 6px; /* Add padding to elements with ID "awards" */
+}
+
+/* Styles for elements with ID "affi" */
+#affi {
+  margin-bottom: 15px; /* Add bottom margin to elements with ID "affi" */
+  border-radius: 10px; /* Apply border radius to elements with ID "affi" */
+  box-shadow: 5px 5px 5px #540909; /* Apply box shadow to elements with ID "affi" */
+  padding: 6px; /* Add padding to elements with ID "affi" */
+}
+
+/* Styles for elements with ID "explore" */
+#explore {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Set font family for elements with ID "explore" */
+  font-style: unset; /* Reset font style for elements with ID "explore" */
+  font-weight: bolder; /* Apply bold font weight to elements with ID "explore" */
+  text-shadow: black; /* Apply text shadow to elements with ID "explore" */
+  text-decoration: solid; /* Apply text decoration to elements with ID "explore" */
+}
+
+/* Styles for elements with ID "reference" */
+#reference {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Set font family for elements with ID "reference" */
+  font-style: unset; /* Reset font style for elements with ID "reference" */
+  font-weight: bolder; /* Apply bold font weight to elements with ID "reference" */
+  text-shadow: black; /* Apply text shadow to elements with ID "reference" */
+  text-decoration: solid; /* Apply text decoration to elements with ID "reference" */
+}
+
+/* Styles for elements with ID "links" */
+#links {
+  text-align: center; /* Center-align text within elements with ID "links" */
+  text-shadow: 100px; /* Apply text shadow to elements with ID "links" */
+  border-radius: 5px; /* Apply border radius to elements with ID "links" */
+  box-shadow: 3px 3px 3px #721313; /* Apply box shadow to elements with ID "links" */
+  background-color: #f4efef; /* Set background color for elements with ID "links" */
+  background-repeat: no-repeat; /* Disable background repeat */
+  padding-left: 30px; /* Add left padding to elements with ID "links" */
+  width: 20; /* Set width for elements with ID "links" (should include units like "px" or "%") */
+  height: 10; /* Set height for elements with ID "links" (should include units like "px" or "%") */
+}
+
+/* Styles for elements with ID "recent" */
+#recent {
+  margin-bottom: 15px; /* Add bottom margin to elements with ID "recent" */
+  border-radius: 10px; /* Apply border radius to elements with ID "recent" */
+  box-shadow: 5px 5px 5px #0a0245; /* Apply box shadow to elements with ID "recent" */
+  padding: 6px; /* Add padding to elements with ID "recent" */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Set font family for elements with ID "recent" */
+}
+
+/* Styles for elements with ID "des" */
+#des {
+  margin-bottom: 15px; /* Add bottom margin to elements with ID "des" */
+  border-radius: 10px; /* Apply border radius to elements with ID "des" */
+  box-shadow: 5px 5px 5px #0a0245; /* Apply box shadow to elements with ID "des" */
+  padding: 6px; /* Add padding to elements with ID "des" */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Set font family for elements with ID "des" */
+}
+
+/* Styles for elements with class "umu" */
+.umu {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Set font family for elements with class "umu" */
+  font-style: unset; /* Reset font style for elements with class "umu" */
+  font-weight: bolder; /* Apply bold font weight to elements with class "umu" */
+  text-shadow: black; /* Apply text shadow to elements with class "umu" */
+  text-decoration: solid; /* Apply text decoration to elements with class "umu" */
+}
+
+/* Styles for elements with ID "dess" */
+#dess {
+  margin-bottom: 15px; /* Add bottom margin to elements with ID "dess" */
+  border-radius: 10px; /* Apply border radius to elements with ID "dess" */
+  box-shadow: 5px 5px 5px #0a0245; /* Apply box shadow to elements with ID "dess" */
+  padding: 6px; /* Add padding to elements with ID "dess" */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Set font family for elements with ID "dess" */
+}
+
+/* Styles for elements with ID "dessy" */
+#dessy {
+  margin-bottom: 15px; /* Add bottom margin to elements with ID "dessy" */
+  border-radius: 10px; /* Apply border radius to elements with ID "dessy" */
+  box-shadow: 5px 5px 5px #0a0245; /* Apply box shadow to elements with ID "dessy" */
+  padding: 6px; /* Add padding to elements with ID "dessy" */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Set font family for elements with ID "dessy" */
+}
+
+/* Styles for elements with class "ref" */
+.ref {
+  margin-bottom: 15px; /* Add bottom margin to elements with class "ref" */
+  border-radius: 10px; /* Apply border radius to elements with class "ref" */
+  box-shadow: 5px 5px 5px #80041a; /* Apply box shadow to elements with class "ref" */
+  padding: 6px; /* Add padding to elements with class "ref" */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Set font family for elements with class "ref" */
+  color: #b20c0c; /* Set text color for elements with class "ref" */
+}
+
+/* Styles for elements with ID "contact" */
+#contact {
+  margin-bottom: 15px; /* Add bottom margin to elements with ID "contact" */
+  border-radius: 10px; /* Apply border radius to elements with ID "contact" */
+  box-shadow: 5px 5px 5px #fbf5f5; /* Apply box shadow to elements with ID "contact" */
+  padding: 6px; /* Add padding to elements with ID "contact" */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Set font family for elements with ID "contact" */
+}
+
+/* Styles for label elements */
+label {
+  width: 200px; /* Set a fixed width for label elements */
+  float: left; /* Float label elements to the left */
+  text-align: right; /* Right-align text within label elements */
+}
+
+/* Styles for fieldset elements */
+fieldset {
+  margin-bottom: 15px; /* Add bottom margin to fieldset elements */
+  border-radius: 10px; /* Apply border radius to fieldset elements */
+     box-shadow: 5px 5px 5px #070237;
+    padding: 6px;
+}
+
+/* Styles for elements with ID "sug" */
+#sug {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Set font family for elements with ID "sug" */
+  font-style: unset; /* Reset font style for elements with ID "sug" */
+  font-weight: bolder; /* Apply bold font weight to elements with ID "sug" */
+  text-shadow: rgb(184, 10, 10); /* Apply text shadow to elements with ID "sug" */
+  text-decoration: solid; /* Apply text decoration to elements with ID "sug" */
+}
+
+/* Styles for legend elements */
+legend {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Set font family for legend elements */
+  font-style: unset; /* Reset font style for legend elements */
+  font-weight: bolder; /* Apply bold font weight to legend elements */
+  text-shadow: rgb(32, 3, 69); /* Apply text shadow to legend elements */
+  text-decoration: solid; /* Apply text decoration to legend elements */
+}
+
+/* Styles for all img elements */
+img {
+  border-radius: 5px; /* Apply border radius to all img elements */
+  box-shadow: 5px 5px 5px #0a0245; /* Apply box shadow to all img elements */
+  background-color: #f4efef; /* Set background color for all img elements */
+  background-image: url('tenor.gif'); /* Set background image for all img elements */
+  background-repeat: no-repeat; /* Disable background repeat for all img elements */
+  padding-left: 30px; /* Add left padding to all img elements */
+  width: 20; /* Set width for all img elements (should include units like "px" or "%") */
+  height: 10; /* Set height for all img elements (should include units like "px" or "%") */
+}
+
+/* Styles for elements with ID "start" */
+#start {
+  border-radius: 5px; /* Apply border radius to elements with ID "start" */
+  box-shadow: 5px 5px 5px #0a0245; /* Apply box shadow to elements with ID "start" */
+  background-color: #f4efef; /* Set background color for elements with ID "start" */
+  background-image: url('tenor.gif'); /* Set background image for elements with ID "start" */
+  background-repeat: no-repeat; /* Disable background repeat for elements with ID "start" */
+  padding-left: 30px; /* Add left padding to elements with ID "start" */
+  width: 20; /* Set width for elements with ID "start" (should include units like "px" or "%") */
+  height: 10; /* Set height for elements with ID "start" (should include units like "px" or "%") */
+}
+
+/* Styles for elements with ID "body" */
+#body {
+  width: 900px; /* Set a fixed width for elements with ID "body" */
+  margin-left: auto; /* Center-align the element horizontally */
+  margin-right: auto; /* Center-align the element horizontally */
+}
+
+/* Styles for elements with ID "gallary" */
+#gallary span { display: none; }
+#gallary a:hover span {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 300px;
+  text-align: center;
+}
+
+/* Styles for elements within "gallary" list items */
+#gallary li {
+  display: inline;
+  float: left;
+  padding: 10px;
+}
+
+/* Styles for elements with ID "font" */
+#font {
+  font-size: large; /* Set font size for elements with ID "font" */
+}
+
+/* Styles for elements with ID "index" */
+#index {
+  margin-bottom: 15px; /* Add bottom margin to elements with ID "index" */
+  border-radius: 10px; /* Apply border radius to elements with ID "index" */
+  box-shadow: 5px 5px 5px #540909; /* Apply box shadow to elements with ID "index" */
+  padding: 6px; /* Add padding to elements with ID "index" */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Set font family for elements with ID "index" */
+  color: #b20c0c; /* Set text color for elements with ID "index" */
+}
+
+/* Home page styles start here */
+
+/* Styles for elements with class "boximg" */
+.boximg {
+  width: 130px; /* Set width for elements with class "boximg" */
+  height: 50px; /* Set height for elements with class "boximg" */
+  border: 2px solid white; /* Apply border to elements with class "boximg" */
+  border-radius: 5px; /* Apply border radius to elements with class "boximg" */
+  box-shadow: 4px 4px 5px goldenrod; /* Apply box shadow to elements with class "boximg" */
+  margin: 10px; /* Add margin to elements with class "boximg" */
+  color: white; /* Set text color for elements with class "boximg" */
+  background-color: rgb(2, 2, 73); /* Set background color for elements with class "boximg" */
+  position: absolute; /* Position elements absolutely */
+  top: 60; /* Set top position for elements with class "boximg" */
+  left: 10; /* Set left position for elements with class "boximg" */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth animation */
+}
+.boximg:hover {
+  background-color: goldenrod; /* change the background color on hover */
+  box-shadow: 8px 8px 10px goldenrod; /* add a larger box-shadow effect for depth */
+}
+
+/* Styles for .box class */
+.box {
+  width: 200px; /* Set width for elements with class .box */
+  height: 200px; /* Set height for elements with class .box */
+  border: 2px solid white; /* Apply border to elements with class .box */
+  border-radius: 5px; /* Apply border radius to elements with class .box */
+  box-shadow: 5px 5px 6px grey; /* Apply box shadow to elements with class .box */
+  margin: 1px; /* Add margin to elements with class .box */
+  position: relative; /* Set position to relative for elements with class .box */
+  padding-left: 30%; /* Add left padding to elements with class .box */
+}
+
+/* Styles for .box a */
+.box a {
+  text-decoration: none; /* Remove underline style from hyperlink inside .box */
+}
+
+/* Styles for .border-box1 class */
+.border-box1 {
+  display: flex;
+  border-radius: 10%;
+}
+
+/* Styles for .border-box2 class */
+.border-box2 {
+  display: flex;
+}
+
+/* Styles for .border-box3 class */
+.border-box3 {
+  display: block;
+}
+
+/* Media query for screens with a maximum width of 600px */
+@media only screen and (max-width: 600px) {
+  .boximg {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    top: 40px;
+    left: 5%;
+    margin: 5px;
+  }
+  
+  .box {
+    width: 150px;
+    height: 150px;
+    padding-left: 10%;
+  }
+}
+
+/* Media query for screens with a width between 601px and 960px */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+  .boximg {
+    width: 120px;
+    height: 45px;
+    font-size: 16px;
+    top: 50px;
+    left: 10%;
+    margin: 8px;
+  }
+  
+  .box {
+    width: 170px;
+    height: 170px;
+    padding-left: 20%;
+  }
+}
+
+/* Media query for screens with a minimum width of 961px */
+@media only screen and (min-width: 961px) {
+  .boximg {
+    width: 130px;
+    height: 50px;
+    font-size: 18px;
+    top: 60px;
+    left: 10%;
+    margin: 10px;
+  }
+  
+  .box {
+    width: 200px;
+    height: 200px;
+    padding-left: 30%;
+  }
+}
+
+/* Styles for elements with ID "gold" */
+#gold {
+  color: goldenrod; /* Set text color for elements with ID "gold" */
+  font-weight: bold; /* Apply bold font weight to elements with ID "gold" */
+}
+
+/* Styles for elements with class "assterisks" */
+.assterisks {
+  color: goldenrod; /* Set text color for elements with class "assterisks" */
+}
+
+/* Styles for elements with ID "nopaperimg" */
+#nopaperimg {
+  float: right; /* Float elements with ID "nopaperimg" to the right */
+  border: 2px solid white; /* Apply border to elements with ID "nopaperimg" */
+  box-shadow: 0 0 10px gray; /* Apply box shadow to elements with ID "nopaperimg" */
+}
+
+/* Styles for elements with class "back" */
+.back {
+  background-color: rgb(2, 2, 53); /* Set background color for elements with class "back" */
+  color: white; /* Set text color for elements with class "back" */
+  border-radius: 3%; /* Apply border radius to elements with class "back" */
+}
+
+/* Styles for header element */
+header {
+  position: relative; /* Set the header to relative position */
+}
+
+#homepage {
+  position: absolute; /* Set the position of the text to absolute */
+  top: 0; /* Place the text at the top of the header */
+  left: 0; /* Place the text at the left of the header */
+  right: 0; /* Place the text at the right of the header */
+  text-align: center; /* Center align the text within the header */
+  margin-top:5%; /* Adjust the margin from the top as needed */
+  font-weight: bold; /* Set the font weight to bold */
+  z-index: 1; /* Set the z-index to make sure the text is on top of the image */
+  text-align: center;
+  text-shadow: 100px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  color: white;
+  height: 10px; /* Add the unit 'px' to specify the height */
+  font-family: Arial, Helvetica, sans-serif;
+
+  }
+  
+  #homepage a {
+    color: white; /* Reset the color to the default value */
+    text-decoration: none; /* Remove the underline */
+  }
+  
+  #homepage a:hover {
+    color: goldenrod; /* Change the color to red on hover */
+  }
+
+
+img {
+  
+  height: auto; /* Set the height of the image to auto to maintain aspect ratio */
+  object-fit: cover; /* Set the image to cover the header */
+  position: relative; /* Set the position of the image to relative */
+  z-index: 0; /* Set the z-index of the image to make sure it's below the text */
+}
+#homepage
+{
+  text-align: center;
+    text-shadow: 100px;
+    border-radius: 5px;
+	background-repeat: no-repeat;
+padding-left: 30px;
+width: 20;
+height: 10;
+text-shadow: #f4efef;
+}
+
+.mission
+  {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    font-weight: bolder;
+    text-shadow: black;
+    text-decoration: solid;
+    line-height: 2.5; /* add line space */
+    font-size: larger;
+    margin: auto;
+    padding-left: 2%;
+  }
+ 
+
+  /* FOR ARTICLE DESCRIPTION/CLASSIFICATION PAGE */
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16pX goldenrod;
+    min-width: 500px;
+    width: max-content;
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content ul li a {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content ul li a:hover {
+    background-color: #f2f2f2;
+}
+
+
+.dropdown-content ul li a:hover + #description {
+    display: block;
+}
+#logo
+{
+  border: none;
+  box-shadow: none;
+}
+
+.logoborder {
+  padding-top: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*gridding*/
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 40px;
+}
+
+/* Styles for elements with class "category" */
+.category {
+  position: flex; /* Set the position to flex */
+  display: flex; /* Display as flex container */
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center-align items horizontally */
+  justify-content: center; /* Center-align items vertically */
+  width: 100%; /* Set width to 100% */
+  height: 250px; /* Set height to 250px */
+  margin: 10px; /* Add margin around the category */
+  background-color: rgb(4, 4, 56); /* Set background color */
+  box-shadow: 10px goldenrod; /* Apply a box shadow (note: values may need adjustment) */
+  transition: transform 0.3s ease; /* Add a transition for smooth animation */
+}
+
+/* Change transform on hover for elements with class "category" */
+.category:hover {
+  transform: translateY(-10px); /* Move the element up by 10px on hover */
+}
+
+/* Styles for images within "category" elements */
+.category img {
+  width: 80px; /* Set image width */
+  height: 80px; /* Set image height */
+  margin-bottom: 10px; /* Add bottom margin for spacing */
+}
+
+/* Styles for headings (h3) within "category" elements */
+.category h3 {
+  margin: 0; /* Remove margin around the heading */
+  font-size: 24px; /* Set font size */
+  font-weight: bold; /* Set font weight to bold */
+  text-align: center; /* Center-align text */
+  color: white; /* Set text color to white */
+}
+
+/* Styles for pseudo-element "::before" within "category" elements */
+.category::before {
+  content: ""; /* Add empty content */
+  position: absolute; /* Set position to absolute */
+  top: 100%; /* Position it below the "category" element */
+  left: 50%; /* Center it horizontally */
+  transform: translateX(-50%); /* Center it horizontally */
+  width: 200px; /* Set width */
+  padding: 10px; /* Add padding */
+  background-color: #fff; /* Set background color */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Apply box shadow */
+  border-radius: 5px; /* Apply border radius */
+  opacity: 0; /* Initially set opacity to 0 */
+  transition: opacity 0.3s ease-in-out; /* Add a transition for opacity */
+  z-index: 2; /* Set z-index to ensure it's above other elements */
+}
+
+/* Change opacity on hover for "::before" pseudo-element within "category" elements */
+.category:hover::before {
+  opacity: 1;
+}
+
+/* Styles for elements with class "description" within "category" elements on hover */
+.category:hover .description {
+  transform: scaleY(1); /* Scale the element vertically on hover */
+}
+
+/* Styles for pseudo-element "::after" within "category" elements */
+.category:hover::after {
+  opacity: 1; /* Change opacity on hover to 1 */
+}
+
+/* Change transform and background color on hover for elements with class "category" */
+.category:hover {
+  transform: translateY(-10px); /* Move the element up by 10px on hover */
+  background-color: goldenrod; /* Change background color on hover */
+}
+
+/* Styles for pseudo-element "::after" within headings (h3) */
+.category h3::after {
+  content: ""; /* Add empty content */
+  position: absolute; /* Set position to absolute */
+  bottom: 100%; /* Position it above the heading */
+  left: 50%; /* Center it horizontally */
+  transform: translateX(-50%); /* Center it horizontally */
+  border-left: 5px solid transparent; /* Add left border */
+  border-right: 5px solid transparent; /* Add right border */
+  border-bottom: 5px solid #fff; /* Add bottom border */
+  opacity: 0; /* Initially set opacity to 0 */
+  transition: opacity 0.3s ease-in-out; /* Add a transition for opacity */
+}
+
+/* Change opacity on hover for "::after" pseudo-element within headings (h3) */
+.category:hover h3::after {
+  opacity: 1;
+}
+.description {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateY(-100%) translateX(-50%);
+  width: 80%;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  opacity: 0;
+  transition: transform 0.3s ease-in-out;
+  z-index: 3;
+  margin: 0 auto;
+}
+
+.category:hover .description {
+  opacity: 1;
+  transform: translateY(0%);
+  transform: scaleY(1);
+  z-index: 2;
+}
+
+/* Nova Scotia page styles */
+/* Remove border radius from elements with class "no-border-radius" */
+.no-border-radius {
+  border: none;
+  border-radius: 0;
+}
+
+/* Styles for elements with class "redtest" */
+.redtest {
+  color: red; /* Set text color to red */
+}
+
+/* Styles for elements with ID "eachpage" */
+#eachpage {
+  text-align: center; /* Center-align the text */
+  text-shadow: 100px; /* Add a text shadow (note: this value may need adjustment) */
+  border-radius: 5px; /* Apply a border radius to the element */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  padding-left: 30px; /* Add left padding */
+  width: 20; /* Set width (note: this value may need units, e.g., "20px") */
+  height: 10; /* Set height (note: this value may need units, e.g., "10px") */
+  text-shadow: #f4efef; /* Add another text shadow (note: this value may need adjustment) */
+  color: yellow !important; /* Set text color to yellow (important override) */
+  position: flex; /* Set the position to flex */
+  padding-top: 5%; /* Add top padding for spacing */
+}
+
+/* Change text color on hover for elements with ID "eachpage" */
+#eachpage:hover {
+  color: goldenrod;
+}
+
+/* Change text color on active state for elements with ID "eachpage" */
+#eachpage:active {
+  color: goldenrod;
+}
+
+/* Styles for anchor (link) elements */
+a {
+  text-decoration: none; /* Remove underline style from links */
+}
+
+/* Change text color on hover for anchor (link) elements */
+a:hover {
+  text-decoration: none; /* Remove underline style on hover */
+  color: goldenrod; /* Change text color on hover to goldenrod */
+}
+
+/* Styles for elements with ID "change" (for welcome text) */
+#change:hover {
+  color: goldenrod; /* Change text color on hover to goldenrod */
+}
+
+/* Styles for elements with ID "alarm" */
+#alarm {
+  color: rgb(226, 6, 6); /* Set text color to a specific red color */
+}
+
+/* Styles for social media buttons */
+ul.social-media-buttons {
+  display: flex; /* Display social media buttons in a flex layout */
+  justify-content: center; /* Center-align the buttons horizontally */
+  align-items: center; /* Center-align the buttons vertically */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+ul.social-media-buttons li {
+  list-style: none; /* Remove list bullet points for social media buttons */
+  margin-right: 10px; /* Add right margin between social media buttons */
+}
+
+/* Styles for the review section */
+.review {
+  margin-bottom: 20px; /* Add bottom margin for spacing between reviews */
+  border: 1px solid #ccc; /* Add a border around each review */
+  padding: 10px; /* Add padding within each review */
+}
+
+.review .name {
+  font-weight: bold; /* Set the name text to bold */
+}
+
+.review .message {
+  margin-top: 5px; /* Add top margin for spacing between name and message */
+}
+
+.review .stars {
+  color: gold; /* Set star icons to gold color */
+}
+
+/* Styles for elements with class "redtest" */
+.redtest {
+  color: red; /* Set text color to red for elements with class "redtest" */
+  padding-top: 3%; /* Add padding to the top for spacing */
+}
+
+/* Styles for elements with ID "eachpage" */
+#eachpage {
+  text-align: center; /* Center-align text for elements with ID "eachpage" */
+  text-shadow: 100px; /* Apply text shadow for elements with ID "eachpage" */
+  border-radius: 5px; /* Apply border radius for elements with ID "eachpage" */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  padding-left: 30px; /* Add left padding for spacing */
+  width: 20; /* Set width for elements with ID "eachpage" (Note: missing units, e.g., px or %) */
+  height: 10; /* Set height for elements with ID "eachpage" (Note: missing units, e.g., px or %) */
+  text-shadow: #f4efef; /* Apply text shadow */
+  color: yellow !important; /* Set text color to yellow with !important to override other styles */
+  position: flex; /* Set position to flex */
+  padding-top: 5%; /* Add top padding for spacing */
+  display: inline-block; /* Set display to inline-block */
+  margin-right: 10px; /* Add right margin for spacing */
+  padding: 10px 20px; /* Add padding for spacing */
+  border-radius: 40%; /* Apply border radius */
+  color: white; /* Set text color to white */
+  text-decoration: none; /* Remove text decoration */
+}
+
+/* Styles for elements with ID "alarm" */
+#alarm {
+  color: rgb(226, 6, 6); /* Set text color for elements with ID "alarm" */
+}
+
+/* Styles for elements with class "test" */
+.test {
+  font-size: larger; /* Set font size to larger for elements with class "test" */
+  line-height: 2.5; /* Set line height for better spacing */
+}
+
+/* Styles for unordered list with class "social-media-buttons" */
+ul.social-media-buttons {
+  display: flex; /* Set display to flex for alignment */
+  justify-content: center; /* Center-align items horizontally */
+  align-items: center; /* Center-align items vertically */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+/* Styles for list items inside the social media buttons */
+ul.social-media-buttons li {
+  list-style: none; /* Remove list bullet */
+  margin-right: 10px; /* Add right margin for spacing between items */
+}
+
+/* Styles for elements with ID "eachpage" when hovered */
+#eachpage:hover {
+  color: goldenrod; /* Change text color to goldenrod when hovered */
+}
+
+/* Styles for elements with ID "eachpage" when active */
+#eachpage:active {
+  color: goldenrod; /* Change text color to goldenrod when active */
+}
+
+/* Styles for all anchor elements */
+a {
+  text-decoration: none; /* Remove default underline style from anchor elements */
+}
+
+/* Styles for anchor elements when hovered */
+a:hover {
+  text-decoration: none; /* Remove underline when hovered */
+  color: goldenrod; /* Change text color to goldenrod when hovered */
+}
+
+/* Styles for elements with ID "change" when hovered */
+#change:hover {
+  color: goldenrod; /* Change text color to goldenrod when hovered */
+}
+
+/* Styles for elements with ID "reviews-container" */
+#reviews-container {
+  max-width: 600px; /* Set the maximum width for elements with ID "reviews-container" */
+  width: 100%; /* Set width to 100% for responsiveness */
+}
+
+/* Styles for heading elements h1 and h2 */
+h1, h2 {
+  text-align: center; /* Center-align h1 and h2 elements */
+}
+
+/* Styles for form elements */
+form {
+  display: flex; /* Set display to flex for form elements */
+  flex-direction: column; /* Set flex direction to column for form elements */
+  align-items: center; /* Center-align form elements horizontally */
+  margin-top: 20px; /* Add top margin for spacing */
+}
+
+/* Styles for labels, input elements, textarea, select, and button elements within a form */
+form label, form input, form textarea, form select, form button {
+  margin: 5px 0; /* Add margin for spacing */
+}
+
+/* Styles for elements with ID "logo" */
+#logo {
+  position: absolute; /* Set position to absolute for the logo */
+  top: 10px; /* Position from the top */
+  left: 200px; /* Position from the left */
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+/* Styles for elements with class "search-box" */
+.search-box {
+  display: flex; /* Set display to flex for search box */
+  align-items: center; /* Center-align items vertically */
+  width: 100%; /* Set width to 100% */
+  max-width: 600px; /* Set the maximum width for responsiveness */
+  margin: 0 auto; /* Center-align horizontally */
+  background-color: #ffffff; /* Set background color for search box */
+  border: 1px solid #ccc; /* Apply border */
+  border-radius: 5px; /* Apply border radius */
+  padding: 10px; /* Add padding */
+}
+
+/* Styles for input elements within the search box */
+.search-box input[type="text"] {
+  flex: 1; /* Expand to fill available space */
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+  font-size: 16px; /* Set font size */
+  padding: 5px; /* Add padding */
+}
+
+/* Styles for button elements within the search box */
+.search-box button {
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Change cursor to pointer */
+  padding: 5px; /* Add padding */
+}
+
+/* Styles for icons within the search box button */
+.search-box button i {
+  color: #888888; /* Set color for icon */
+  font-size: 18px; /* Set font size for icon */
+}
+
+/* Styles for elements with class "container" */
+.container {
+  display: flex; /* Set display to flex for container */
+  justify-content: center; /* Center-align content horizontally */
+}
+
+.circle {
+  align-items: center;
+  border: 3px solid goldenrod;
+  border-radius: 50%;
+  padding: 2px 10px;
+  color: white;
+  background-color: blue;
+  box-shadow: 4px 4px 5px goldenrod;
+  width: 100px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 30px;
+  background-color: rgb(2, 2, 73);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* add transition for smooth animation */
+  display: flex;
+  justify-content: center; /* Center the text horizontally */
+  align-items: center; /* Center the text vertically */
+  margin: 0 50px; /* Adjust the margin to set the spacing */
+}
+
+.circle:hover {
+  background-color: goldenrod; /* change the background color on hover */
+  box-shadow: 8px 8px 10px goldenrod; /* add a larger box-shadow effect for depth */
+}
+
+.circle a {
+  text-decoration: none; /* remove underline style from hyperlink */
+  color: white; /* set text color to white */
+}
+
+
+/* Styles for the search button */
+/* Body styles */
+body {
+  font-family: Arial; /* Set the font family for the entire document */
+}
+
+/* Styles for the search form */
+form.example {
+  position: relative; /* Set the form to a relative position */
+}
+
+form.example input[type=text] {
+  padding: 10px; /* Add padding to the text input */
+  font-size: 17px; /* Set font size for the text input */
+  border: 1px solid grey; /* Add a border to the text input */
+  float: left; /* Float the text input to the left */
+  width: 80%; /* Set the width of the text input */
+  background: #f1f1f1; /* Set the background color of the text input */
+}
+
+form.example button {
+  position: absolute; /* Set the search button to an absolute position */
+  top: 0; /* Position from the top */
+  right: 0; /* Position from the right */
+  padding: 10px; /* Add padding to the search button */
+  padding-left: 6.75%; /* Add left padding to the search button */
+  background: #04045e; /* Set the background color of the search button */
+  color: white; /* Set text color of the search button */
+  font-size: 17px; /* Set font size for the search button */
+  border: 1px solid grey; /* Add a border to the search button */
+  border-left: none; /* Remove left border of the search button */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+form.example button:hover {
+  background: goldenrod; /* Change background color on hover */
+}
+
+form.example::after {
+  content: ""; /* Clear the floats */
+  clear: both; /* Clear floats */
+  display: table; /* Display as a table */
+}
+
+/* Styles for the video container */
+.video-container {
+  position: relative; /* Set the video container to a relative position */
+  width: 100%; /* Set the width of the video container */
+  padding-bottom: 20%; /* Set the aspect ratio of the video container */
+  margin-top: 30px; /* Add top margin to the video container */
+}
+
+.video-container iframe {
+  position: absolute; /* Set the iframe inside the video container to absolute position */
+  top: 0; /* Position from the top */
+  left: 0; /* Position from the left */
+  width: 80%; /* Set the width of the iframe */
+  height: 105%; /* Set the height of the iframe */
+}
+
+/* Styles for custom buttons with ID "custom-button-green" and "custom-button-red" */
+#custom-button-green,
+#custom-button-red {
+  background-color: green; /* Set the background color for the buttons */
+  color: white; /* Set text color for the buttons */
+  padding: 10px 20px; /* Add padding to the buttons */
+  border: none; /* Remove button border */
+  cursor: pointer; /* Change cursor to pointer */
+  border-radius: 40%; /* Apply border radius to the buttons */
+}
+
+#custom-button-green:hover,
+#custom-button-red:hover {
+  background-color: goldenrod; /* Change background color on hover */
+}
+
+/* Styles for table data cells (td) */
+td {
+  border: 1px solid black; /* Add border to table data cells */
+  padding: 10px; /* Add padding to table data cells */
+}
+
+/* Additional styles for element with ID "different" */
+#different {
+  color: red; /* Set text color to red */
+  padding-top: 3%; /* Add top padding for spacing */
+  padding-right: 20%; /* Add right padding for spacing */
+}

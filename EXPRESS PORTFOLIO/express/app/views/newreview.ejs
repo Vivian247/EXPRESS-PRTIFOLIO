@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!--File: testimonial.ejs
+// Student’s Name: ANIEBONAM VIVIAN OLUOMACHUKWU
+// StudentID: 301308143
+// Date: 01-10-2023-->
+  <title>TESTIMONIALS</title>
+  <link rel="stylesheet" href="/Stylesheets/contact.css" type="text/css">
+  
+
+  <div class="container">
+    <a class="circle" href="index">HOME</a>
+    <a class="circle" href="about">ABOUT</a>
+    <a class="circle" href="contact">CONTACT</a>
+  </div>
+
+    <BR>
+        <body id="body">
+        <h2 class="redtest">Ignite the influence of your perspective and play a pivotal role in molding an extraordinary encounter...!!</h2>
+        <p class="test"> 
+          Share your valuable insights by leaving a review today. Your opinions hold significance, so spare a moment to provide feedback and enlighten me on my performance. Together, we will constantly enhance and deliver an unparalleled experience for everyone involved.
+        </p>
+        <h3 class="redtest">I value your feedback immensely!</h3>
+       
+
+ <!-- Review form -->
+ <fieldset style="width: 30%;">
+    <legend><u><i><h1>Add a Review:</h1></i></u></legend>
+    <form id="review-form" method="POST" action="sreview.php">
+      <label for="name" style="padding-right: 80%;">Name:</label>
+      <input type="text" id="name" name="name" size="40" required="required" tabindex="2">
+      <p>
+        <label id="padding" for="message" style="padding-right: 80%;">Message:</label><br><br></p>
+        <textarea id="message" name="message" cols="50" rows="10" placeholder="---Your rating counts! Share your experience!---" tabindex="6"></textarea>
+      
+        <p>
+            <label for="stars" style="display: inline-block; margin-right: 10px; text-align: left;">Rating:</label>
+          </p>
+          <select id="stars" name="stars" required style="width: 300px; height: 6000;">
+            <option value="5" selected>5 stars</option> <!-- Set 'selected' attribute for default value -->
+            <option value="4">4 stars</option>
+            <option value="3">3 stars</option>
+            <option value="2">2 stars</option>
+            <option value="1">1 star</option>
+          </select>
+      <br>
+      <button type="submit" style="background-color: green; color: white; border-radius: 5px; padding: 10px 20px; font-size: 16px;">Submit Review</button>
+    </form>
+  </fieldset>
+<br>
+  <h1>TESTIMONIALS</h1>
+
+  <!-- Review section -->
+  <div id="reviews-container">
+    <!-- Reviews will be dynamically added here -->
+  </div>
+
+ 
+
+  <script>
+    // JavaScript code to fetch reviews from the server and add them dynamically
+    const reviewsContainer = document.getElementById('reviews-container');
+
+    // Function to create star icons based on the rating
+    function createStars(rating) {
+      const starImagePath = '/images/WhatsApp_Image_2023-05-20_at_12.08.14_AM-removebg-preview (1).png'; // Path to your star image
+      const starsHTML = `<img src="${starImagePath}" alt="star" width="20" height="20" />`.repeat(rating);
+      return `<div class="stars">${starsHTML}</div>`;
+    }
+
+    // Function to add reviews to the HTML structure
+    function addReviews(reviews) {
+      reviews.forEach((review) => {
+        const reviewElement = document.createElement('div');
+        reviewElement.classList.add('review');
+
+        const nameElement = document.createElement('p');
+        nameElement.classList.add('name');
+        nameElement.innerText = review.name;
+
+        const messageElement = document.createElement('p');
+        messageElement.classList.add('message');
+        messageElement.innerText = review.message;
+        const starsElement = document.createElement('p');
+        starsElement.innerHTML = createStars(review.stars);
+
+        reviewElement.appendChild(nameElement);
+        reviewElement.appendChild(messageElement);
+        reviewElement.appendChild(starsElement);
+
+        reviewsContainer.appendChild(reviewElement);
+      });
+    }
+
+    // Fetch reviews from the server
+    fetch('fetchreviews.php')
+      .then((response) => response.json())
+      .then((data) => {
+        // Call the function to add reviews
+        addReviews(data);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  </script>
+
+<!-- SHARE my page code -->  
+<br>
+<br>
+  <div>
+    <h3 class="redtest"><i><b>Share the love! If you find our website helpful, please share it with others who might benefit from it :</b></i></h3>
+    <ul class="social-media-buttons">
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u=researchgrips.com" target="_blank">
+        <img class="hover" src="/images/facebook-removebg-preview.png" alt="Facebook" height="30" width="30"></a></li>
+        <br><br>
+  
+      <li><a href="https://twitter.com/intent/tweet?url=researchgrips.com" target="_blank">
+        <img class="hover" src="/images/twitter.jpg" alt="Twitter" height="30" width="30"></a></li>
+        <br><br>
+      <li><a href="https://www.linkedin.com/shareArticle?url=researchgrips.com" target="_blank">
+        <img class="hover" src="/images/in-removebg-preview.png" alt="LinkedIn" height="30" width="30"></a></li>
+        <br><br>
+        <li><a href="whatsapp://send?text=researchgrips.com" target="_blank"><img class="hover" src="/images/appp-removebg-preview.png" alt="WhatsApp" height="30" width="30"></a></li>
+    </ul>
+  </div>
+          
+
+</body>
+<!-- Footer -->   
+<!-- Include the footer partial -->
+<%- include('./Partials/footer') %>
+
+</body>
+</html>

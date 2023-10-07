@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> CONTACT PAGE </title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="/Stylesheets/contact.css" type="text/css">
+    </head>
+
+    <body id="body">
+        <header>
+            
+            <img src="/images/iStock-1172520571-1-removebg-preview.png" alt="home" width="700" height="700"> 
+            
+<p>
+    <!-- For admin connection code -->
+    <div class="right">
+        <p id="second">
+          <h3>GET IN TOUCH</h3>
+          <h4>Connect with the admin (Vivian) on: </h4>
+          <a href="https://www.facebook.com/aniebonam.vivian.3?mibextid=ZbWKwL"><img class="hover" src="/images/facebook-removebg-preview.png" alt="Facebook" height="30" width="30"></a>
+           <a href="https://www.linkedin.com/in/vivian-aniebonam-36331a239"><img class="hover" src="/images/in-removebg-preview.png" alt="LinkedIn" height="30" width="30"></a>
+          <a href="mailto:aniebonamvivian1@gmail.com"><img class="hover" src="/images/mail-removebg-preview.png" alt="Email" height="30" width="30"></a>
+         </p>
+        </div>
+         </div>  
+ </p>
+<br>
+<p class="test">At our company, we pride ourselves on being experts in our field.
+    Our team is comprised of highly skilled and knowledgeable professionals
+     who are dedicated to delivering the best service to our clients. With years 
+     of experience and a commitment to staying up-to-date with the latest research 
+     trends and advancements, we are confident that we can provide you with the solutions 
+     you need to achieve your goals. Our track record of success speaks for itself, and we
+      are proud to be the best choice that our clients have made. So if you're looking for 
+      a company that is dependable, reliable, and knows how to get the job done right, look no 
+      further than us. We're here to help you every step of the way.
+</p>
+
+    <h2 id="contact">CONTACT FORM</h2>
+    <form method="post" action="contactwebform.php">
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="txtFNAME">First Name:</label>
+            <input type="text" id="txtFNAME" name="txtFNAME" size="40" required="required" tabindex="1">
+            <br>
+            <label for="txtMNAME">Middle Name:</label>
+            <input type="text" id="txtMNAME" name="txtMNAME" size="40" required="required" tabindex="3">
+            <br>
+            <label for="txtLNAME">Last Name:</label>
+            <input type="text" id="txtLNAME" name="txtLNAME" size="40" required="required" tabindex="2">
+            <br>
+            <label for="txtEMAIL">Email:</label>
+            <input type="text" id="txtEMAIL" name="txtEMAIL" size="40" required="required" tabindex="5">
+            <br>
+            <label for="txtPHONE">Phone:</label>
+            <input type="text" id="txtPHONE" name="txtPHONE" size="40" tabindex="4">
+            <br>
+            <p>
+                <label id="padding" for="txtsuggestions"> MESSAGE:</label><br><bR>
+                <textarea id="txtsuggestions" name="txtsuggestions" cols="50" rows="10" placeholder= "---We would love to hear from you! ---" tabindex="6"></textarea>
+            </p>
+            <p>
+                <input type="submit" name="SSubmit" value="SUBMIT" tabindex="70">
+                <input type="reset" name="Sreset" value="RESET" tabindex="40">
+            </p>
+        </fieldset>
+    </form>
+
+    </body> 
+
+
+    <br>
+<br>
+  <div>
+    <h3 class="redtest"><i><b>Share the love! If you find our website helpful, please share it with others who might benefit from it :</b></i></h3>
+    <ul class="social-media-buttons">
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u=researchgrips.com" target="_blank">
+        <img class="hover" src="/images/facebook-removebg-preview.png" alt="Facebook" height="30" width="30"></a></li>
+        <br><br>
+  
+      <li><a href="https://twitter.com/intent/tweet?url=researchgrips.com" target="_blank">
+        <img class="hover" src="/images/twitter.jpg" alt="Twitter" height="30" width="30"></a></li>
+        <br><br>
+      <li><a href="https://www.linkedin.com/shareArticle?url=researchgrips.com" target="_blank">
+        <img class="hover" src="/images/in-removebg-preview.png" alt="LinkedIn" height="30" width="30"></a></li>
+        <br><br>
+        <li><a href="whatsapp://send?text=researchgrips.com" target="_blank"><img class="hover" src="/images/appp-removebg-preview.png" alt="WhatsApp" height="30" width="30"></a></li>
+    </ul>
+  </div>
+          
+         <!-- Footer -->   
+   <!-- Include the footer partial -->
+<%- include('./Partials/footer') %>
+</html>

@@ -1,0 +1,168 @@
+/* File: questionnnare.css
+// Student’s Name: ANIEBONAM VIVIAN OLUOMACHUKWU
+// StudentID: 301308143
+// Date: 01-10-2023*/
+
+
+/* Global styles */
+
+/* Styles for the body element */
+body {
+  font-family: Arial, sans-serif; /* Set font family */
+  margin: 0;
+  padding: 0;
+  size: 16px; /* Note: 'size' is not a valid CSS property, consider removing it */
+  word-spacing: 1.5px;
+  background-color: antiquewhite; /* Background color */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif; /* Font family */
+  font-weight: bolder;
+  text-shadow: black;
+  text-decoration: solid;
+  line-height: 2.5; /* Line height for text */
+  font-size: larger; /* Font size */
+  margin: auto; /* Center align horizontally */
+  padding-left: 2%; /* Add padding to the left */
+}
+
+/* Styles for elements with the 'dear' ID */
+#dear {
+  padding-left: 5%; /* Add padding to the left */
+}
+
+/* Styles for elements with the 'special' ID */
+#special {
+  padding-left: 5%; /* Add padding to the left */
+}
+
+/* Styles for elements with the 'main' class */
+.main {
+  padding-left: 3%; /* Add padding to the left */
+}
+
+/* Styles for elements with the 'man' class */
+.man {
+  padding-left: 0%; /* Remove padding from the left */
+  background-color: rgb(6, 4, 80); /* Background color */
+  text-shadow: azure; /* Text shadow */
+  color: white; /* Text color */
+  padding: 1px 2px; /* Padding */
+  border: 2px solid black; /* Border */
+  border-radius: 4px; /* Border radius */
+  cursor: pointer; /* Cursor style */
+  margin-top: 2px; /* Margin at the top */
+  box-shadow: goldenrod; /* Box shadow */
+}
+
+/* Styles for elements with the 'man' class on hover */
+.man:hover {
+  background-color: goldenrod; /* Background color on hover */
+}
+
+/* Styles for elements with the 'first' ID */
+#first {
+  color: white; /* Text color */
+  text-decoration: underline; /* Underline text */
+}
+
+/* Styles for elements with the 'first' ID on hover */
+#first:hover {
+  color: red; /* Text color on hover */
+}
+
+/* Styles for anchor (link) elements on hover */
+a:hover {
+  color: goldenrod; /* Text color on hover */
+}
+
+/* Styles for h3 elements */
+h3 {
+  margin-top: 100px; /* Margin at the top */
+  font-size: 20px; /* Font size */
+  text-align: left; /* Text alignment */
+  margin-bottom: 0px; /* Margin at the bottom */
+}
+
+/* Styles for h1 elements */
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Font family */
+  font-size: 36px; /* Font size */
+  font-weight: 100px; /* Font weight (note: 100px is not a valid value) */
+  text-align: center; /* Text alignment */
+  margin-top: 10px; /* Margin at the top */
+  margin-bottom: 50px; /* Margin at the bottom */
+}
+
+/* Styles for h2 elements */
+h2 {
+  font-size: 24px; /* Font size */
+  margin-top: 30px; /* Margin at the top */
+  margin-bottom: 20px; /* Margin at the bottom */
+}
+
+/* Styles for form elements */
+form {
+  margin-bottom: 50px; /* Margin at the bottom */
+  padding: 20px; /* Padding */
+  border: 1px solid #ccc; /* Border */
+}
+
+/* Styles for label elements */
+label {
+  font-weight: bold; /* Bold text */
+}
+
+/* Styles for input[type="text"] and select elements */
+input[type="text"],
+select {
+  padding: 8px; /* Padding */
+  margin-bottom: 20px; /* Margin at the bottom */
+  border-radius: 4px; /* Border radius */
+  border: 1px solid #ccc; /* Border */
+  width: 100%; /* Width */
+}
+
+/* Styles for input[type="radio"] and input[type="checkbox"] elements */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px; /* Margin on the right */
+}
+
+/* Section 2 styles */
+
+/* Styles for strong elements within paragraphs */
+p strong {
+  font-weight: bold; /* Bold text */
+  margin-top: 20px; /* Margin at the top */
+  margin-bottom: 10px; /* Margin at the bottom */
+}
+
+/* Other styles */
+
+/* Styles for input[type="submit"] elements */
+input[type="submit"] {
+  background-color: #4CAF50; /* Background color */
+  color: white; /* Text color */
+  padding: 12px 20px; /* Padding */
+  border: none; /* No border */
+  border-radius: 4px; /* Border radius */
+  cursor: pointer; /* Cursor style */
+  margin-top: 20px; /* Margin at the top */
+}
+
+/* Styles for input[type="submit"] elements on hover */
+input[type="submit"]:hover {
+  background-color: goldenrod; /* Background color on hover */
+}
+
+/* Styles for input[type="reset"] elements */
+input[type="reset"] {
+  background-color: #e110f4; /* Background color */
+  color: white; /* Text color */
+  padding: 12px 20px; /* Padding */
+  border: none; /* No border */
+  border-radius: 4px; /* Border radius */
+  cursor: pointer; /* Cursor style */
+  margin-top: 20px; /* Margin at the top */
+}
+
+/* Styles

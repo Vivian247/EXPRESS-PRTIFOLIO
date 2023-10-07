@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--File: onlinebooking.ejs
+// Student’s Name: ANIEBONAM VIVIAN OLUOMACHUKWU
+// StudentID: 301308143
+// Date: 01-10-2023-->
+<head>
+    <title>Booking of classes</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/Stylesheets/contact.css" type="text/css">
+    <script src="/Javascripts/onlinebooking.js" defer></script>
+</head>
+<body id="body">
+<header>
+  <!-- Navigation links -->
+    <div class="container">
+        <a class="circle" href="index">HOME</a>
+        <a class="circle" href="about">ABOUT</a>
+        <a class="circle" href="contact">CONTACT</a>
+    </div>
+    <br>
+    <br>
+    <!-- Page title -->
+    <h2 class="pname redtest"> Welcome to our Booking of Classes page!</h2>
+    <br>
+    <br>
+    <div class="test">
+<p><b>Are you ready to enhance your skills and broaden your knowledge? Look no further! Our platform offers a wide range of courses designed to cater to your learning needs and interests.</b></p>
+<p>Whether you're a beginner starting from scratch or an experienced professional looking to advance your skills, we have the perfect courses for you. Choose from a variety of subjects, including SQL, Programming, and Web Design.</p>
+<p>With flexible delivery options such as in-person classes, online sessions, and asynchronous learning, you can tailor your learning experience to fit your schedule and preferences. Our expert instructors are dedicated to providing you with a rich and engaging educational journey.</p>
+<p>So, go ahead and explore our course offerings. Select the courses that interest you, choose your preferred delivery mode, and customize the number of hours and days per week. We'll calculate the total price and guide you through the enrollment process.</p>
+<p class="redtest"><b>Get ready to embark on a transformative learning experience with us. Start booking your classes today and unlock new opportunities!</b></p>
+</div>
+    <br>
+<fieldset>
+  <!-- Course selection -->
+  <p style="font-weight: bold; text-transform: uppercase; color:blue;">Please select the course for enrollment :</p>
+    <input type="checkbox" id="course1"><B>SQL</B><br><br>
+    <input type="checkbox" id="course2"><B>Programming</B><br><br>
+    <input type="checkbox" id="course3"><B>Web design</B><br><br>
+    <br>
+     <!-- Delivery mode selection -->
+    <p style="font-weight: bold; text-transform: uppercase; color:blue;">Please select the course delivery mode :</p>
+    <input type="radio" id="choice1" name="choice"><B>In-person</B><br><br>
+    <input type="radio" id="choice2" name="choice"><B>Online</B><br><br>
+    <input type="radio" id="choice3" name="choice"><B>Asynchronous</B><br><br>
+    <br>
+      <!-- Hours per day -->
+    <p style="font-weight: bold; text-transform: uppercase; color:blue;">How many hours/day do you want?</p>
+    <input type="number" name="hours" id="hoursInput" required>
+    <br>
+    <br>
+     <!-- Days per week -->
+    <p style="font-weight: bold; text-transform: uppercase; color:blue;">How many days in a week do you want?</p>
+    <input type="number" name="days" id="daysInput" required>
+    <br>
+    <br>
+  </fieldset>
+    <br>
+    <br>
+    <br>
+  <!-- Total button -->
+    <button type="button" id="submitBtn" class="circle"><B>TOTAL</B></button>
+    
+</header>
+<br>
+
+<style>
+  #result {
+      font-weight: bold;
+      text-decoration: underline;
+      font-size: 24px;
+  }
+</style>
+
+<p id="result">YOUR GRAND TOTAL:</p>
+<p id="result"></p>
+
+
+<!-- SHARE my page code -->  
+<br>
+<br>
+  <div>
+    <h3 class="redtest"><i><b>Share the love! If you find our website helpful, please share it with others who might benefit from it :</b></i></h3>
+    <ul class="social-media-buttons">
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u=researchgrips.com" target="_blank">
+        <img class="hover" src="/images/facebook-removebg-preview.png" alt="Facebook" height="30" width="30"></a></li>
+        <br><br>
+  
+      <li><a href="https://twitter.com/intent/tweet?url=researchgrips.com" target="_blank">
+        <img class="hover" src="/images/twitter.jpg" alt="Twitter" height="30" width="30"></a></li>
+        <br><br>
+      <li><a href="https://www.linkedin.com/shareArticle?url=researchgrips.com" target="_blank">
+        <img class="hover" src="/images/in-removebg-preview.png" alt="LinkedIn" height="30" width="30"></a></li>
+        <br><br>
+        <li><a href="whatsapp://send?text=researchgrips.com" target="_blank"><img class="hover" src="/images/appp-removebg-preview.png" alt="WhatsApp" height="30" width="30"></a></li>
+    </ul>
+  </div>
+          
+
+</body>
+<!-- Footer -->   
+<!-- Include the footer partial -->
+<%- include('./Partials/footer') %>
+
+
+</body>
+</html>
